@@ -1,0 +1,9 @@
+事件
+载入模块的方式
+npm命令
+    npm install <-g> <package_name>  下载
+        uninstall  卸载
+        update
+        npm root -g
+        upm config set prefix  <path>
+    二进制  buffer

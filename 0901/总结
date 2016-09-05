@@ -1,0 +1,14 @@
+读文件：fs.readFile(filename,[options],function(err,data){});
+写文件：fs.writeFile(filename,data,[options],function(err){});
+打开文件：fs.open(filename,flags,[mode],function(err,fd){});
+从指定文件开始读文件：fs.read(fd,buffer,offset,len,position,function(err,readLen,buffer){});
+从指定文件开始写文件：fs.write(fd,buffer,offset,len,position,function(err,writeLen,buffer){});
+关闭文件：fs.close(fd);
+刷新缓存：fs.fsync(fd);
+创建目录：fs.mkdir(path,[mode],function(err){});
+读取目录：fs.readdir(path,function(err,files){});
+查看文件或目录信息：fs.stat(path,function(err,stats){});
+                fs.lstat(path,function(err,stats){});
+                //stats.isFile()  stats.isDirectory()  stats.size;
+检查文件或目录是否存在：fs.exists(path,function(exists){});
+获取文件或目录的绝对路径：fs.realpath(path,[cache],function(err,)
